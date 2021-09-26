@@ -1,0 +1,267 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@rubensfranklin 
+Engelp
+/
+form_cadastro
+Public
+2
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+form_cadastro/Formulario de Registro - Itau/style.css
+@Engelp
+Engelp Feature: Validacao Cep, Validacao Cpf, Post Json and Mascara
+Latest commit 6443e3b on 18 May
+ History
+ 1 contributor
+239 lines (156 sloc)  3.38 KB
+   
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    margin-top: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background: #2e2e2e;
+}
+
+div#parallelogram {
+    margin-top: 10px;
+
+    background: #EC7000;
+
+    width: 1000px;
+
+    height: 720px;
+
+    max-width: 65vw;
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 15px;
+
+    transform: skew(6deg, 3deg);
+
+    position: absolute;
+
+    z-index: -1;
+}
+
+section {
+    display: flex;
+
+    background: #fff;
+
+    padding: 30px 5px; /* 30px superior e inferior -  5px para os lados */
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 15px;
+
+    max-width: 70vw;
+}
+
+section h1{
+    text-align: center;
+    font-size: 1.850rem;
+}
+
+section h3{
+    padding-top: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset:nth-child(4) {
+    display: flex;
+}
+
+fieldset:nth-child(5) {
+    display: flex;
+}
+
+fieldset:nth-child(6) {
+    display: flex;
+}
+
+fieldset:nth-child(7) {
+    display: flex;
+}
+
+fieldset:nth-child(8) {
+    display: flex;
+}
+
+fieldset:nth-child(9) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container input {
+    margin: 10px 10px;
+
+    width: calc(100% - 20px);
+
+    height: 60px;
+
+    border: none;
+
+    background-color: #ededed;
+
+    border-radius: 4px;
+
+    color: #333;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    padding: 14px 10px 0 10px;
+}
+
+.container {
+    position: relative; /* relative - indica que esta posicionado em relacao a sua posicao normal */
+}
+
+.container label {
+    text-transform:  uppercase;
+
+    font-size: 14px;
+
+    font-weight: 700;
+    
+    color: #9d9d9d;
+
+    position: absolute; /* absolute - posiciona qualquer elmento de acordo com o elemento pai, deixando de fazer parte do fluxo comum do documento. */
+
+    line-height: 70px;
+
+    top: -7px; /* altura do texto da label */
+
+    left: 20px;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    transition: 0.5s;
+}
+
+.select label {
+
+    margin-left: 10px;
+}
+
+/* ~ - Quando ocorrer o foco no input altere as propriedades do label. */
+
+.container input:focus ~ label,
+.contaniner input:valid ~ label {
+    left: 20px;
+    top: -15px;
+    color: #00acd7;
+}
+
+.button {
+    margin-top: 5px;
+
+    width: calc(50% - 10px);
+    height: 60px;
+
+    background: #EC7000;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.5s linear;
+}
+
+button:hover{
+    opacity: 0.75;
+}
+
+section img {
+    width: 250px;
+    height: 250px;
+
+    margin: auto 40px; /*auto - Centraliza horizontalmente o elemento em seu conteiner */
+}
+
+@media only screen and (max-width: 1080px) {
+   
+    div#parallelogram {
+        margin-top: -1px ;
+        height: 702px;
+    }
+
+    section img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    div#parallelogram {
+        display: none;
+    }
+
+    section {
+        min-width: 95vw;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    fieldset:nth-child(4),
+    fieldset:nth-child(5),
+    fieldset:nth-child(6),
+    fieldset:nth-child(7),
+    fieldset:nth-child(8),
+    fieldset:nth-child(9) {
+        flex-direction: column;
+    }
+
+    fieldset:nth-child(9) button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
