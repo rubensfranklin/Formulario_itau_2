@@ -35,10 +35,10 @@ Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, C
 
 ##  Resultado 
 <br/>
-<img src="assets/img/Captura de Tela (9).png" alt="Web Version"/>
+<img src="https://github.com/rubensfranklin/Formulario_itau_2/blob/main/imagens/browser.png" alt="Web Version"/>
 
 ### Mobile Version
-<img src="assets/img/mobile.png" alt="Mobile Version"/>
+<img src="https://github.com/rubensfranklin/Formulario_itau_2/blob/main/imagens/mobile.png" alt="Mobile Version"/>
 
 ## Referencias que inspiraram este formulário 
 
