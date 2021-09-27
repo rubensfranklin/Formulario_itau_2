@@ -114,8 +114,58 @@ section .contentBx .formBx .inputBx input[type='submit']:hover{
 }
 
 
+
+
+
 /* Aqui responsividade*/
 
+@media (max-width: 768px){
+
+    section .imgBx{
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    section .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 95%;
+        z-index: 1;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+
+    }
+
+    section .contentBx .formBx{
+        width: 100%;
+        padding: 30px;
+        background: rgb(255,255, 255  );
+        opacity: 0.9;
+        margin: 20px
+    }
+    
+    section  input[type='submit']{
+       
+        margin-bottom: 2rem;
+
+    }
+    section  h2{
+       
+        margin-top: 2rem;
+
+    }
+
+    
+}
+/* Aqui responsividade Celular */
 @media (max-width: 500px){
 
     section .imgBx{
