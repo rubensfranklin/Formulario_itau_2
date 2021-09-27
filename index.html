@@ -1,120 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | ITAÚ</title>
-    <link rel="stylesheet" href="stilo.css">
 
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário | ITAÚ</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
 
-    <!-- Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.-->
+    <body>
 
-    <!-- Os campos Nome, Cpf, Endereco, Numero, Telefone Celular são obrigatórios -->
-       <section> 
+        <!-- Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, logradouro, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.-->
+        <!-- Os campos Nome, Cpf, logradouro, Numero, Telefone Celular são obrigatórios -->
+        <section>
 
-    <div class="imgBx">
-
-        <img src="imagens/bg.jpg">
-        </div>
-        <div class="contentBx">
-            <div class="formBx">
-                <h2>Cadastro</h2>
-                <form onsubmit="validar()">
-
-                    <div class="inputBx">
-                        <span>Nome (*)</span>
-                        <input type="text" required>
-
-                    </div>
-
-                    <div class="inputBx">
-                        <span>CPF (*)</span>
-                        <input type="text" id="cpf" value="" name="cpf"  required onkeydown="fMasc( this, mCPF );"
-		title="Digite o CPF no formato nnn.nnn.nnn-nn">
-
-                    </div>
-
-                    <div class="inputBx">
-                        <span>RG</span>
-                        <input type="text" >
-
-                    </div>
-                    <div class="inputBx">
-                        <label for="sexo"></label>
-                        <span>Sexo (*)</span>
-
-                    <select name="sexo" id="sexo" required>
-                     <option value="0">-</option>
-                     <option value="M">Masculino</option>
-                     <option value="F">Feminino</option>
-                    </select>
-
-                    </div>
-
-                    <div class="inputBx">
-                        <span>CEP (*)</span>
-                        <input type="text" name="cep" id="cep"  required>
-                                       <label for="cidade" >  </label>
-                                   </div>
-                                  
-                                 <div class="inputBx">
-                                     <span>Cidade (*)</span>
-                                       <input type="text" name="cidade" id="localidade"  required>
-                                       <label for="cidade" ></label>
-                                   </div>
-                               
-                                 <div class="inputBx">
-                                     <span>Estado (*)</span>
-                                       <input type="text" name="estado" id="uf"  required>
-                                       <label for="estado" ></label>
-                                   </div>
-                               
-                                 <div class="inputBx">
-                                     <span>Rua (*)</span>
-                                       <input type="text" name="endereco" id="logradouro"  required>
-                                       <label for="endereco" ></label>
-                                   </div>
-
-                                   <div class="inputBx">
-                                    <span>Número (*)</span>
-                                      <input type="number" name="numero" id="numero"  required>
-                                      <label for="numero" ></label>
-                                  </div>
-                                  <div class="inputBx">
-                                    <span>Celular (*)</span>
-                                      <input type="text" name="celular" id="cel"  required>
-                                      <label for="numero" ></label>
-                                  </div>
-                                  <div class="inputBx">
-                                    <span>Telefone </span>
-                                      <input type="number" name="fixo" id="fixo"  >
-                                      <label for="fixo" ></label>
-                                  </div>
-
-                    <div class="inputBx">
-                        <input type="submit" value="Enviar" onclick="console.log('O cpf é válido?', isValidCPF(document.getElementById('cpf').value))">
-
-                    </div>
-
-                    </div>
-                </form>
-
+            <div class="imgBx">
+                <img alt="Imagem do fundo" src="imagens/bg.jpg">
             </div>
 
-        </div>
+            <div class="contentBx">
+                <div class="formBx">
 
+                    <h2>Cadastre-se</h2>
 
+                    <form id="formulario" onsubmit="validarEnviar()">
 
+                        <div class="inputBx">
+                            <span>Nome (*)</span>
+                            <input type="text" required>
+                        </div>
 
+                        <div class="inputBx">
+                            <span>CPF (*)</span>
+                            <input type="text" id="cpf" name="cpf" required title="Digite o CPF no formato nnn.nnn.nnn-nn" maxlength="14">
+                        </div>
 
-   </section>
+                        <div class="inputBx">
+                            <span>RG</span>
+                            <input type="text" id="rg" name="rg">
+                        </div>
 
-<script SRC="CEP.JS"></script>
-<script SRC="SCRIPT.JS"></script>
+                        <div class="inputBx">
+                            <label for="sexo"></label>
+                            <span>Sexo (*)</span>
+                            <select name="sexo" id="sexo" required>
+                                <option value="">Por Favor Escolha</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                            </select>
+                        </div>
 
-</body>
+                        <div class="inputBx">
+                            <span>CEP (*)</span>
+                            <input type="text" name="cep" id="cep" required>
+                            <label for="cep"> </label>
+                        </div>
+
+                        <div class="inputBx">
+                            <span>Cidade (*)</span>
+                            <input type="text" name="cidade" id="localidade" required>
+                            <label for="cidade"></label>
+                        </div>
+
+                        <div class="inputBx">
+                            <span>Estado (*)</span>
+                            <input type="text" name="estado" id="uf" required>
+                            <label for="estado"></label>
+                        </div>
+
+                        <div class="inputBx">
+                            <span>Rua (*)</span>
+                            <input type="text" name="logradouro" id="logradouro" required>
+                            <label for="logradouro"></label>
+                        </div>
+
+                        <div class="inputBx">
+                            <span>Número (*)</span>
+                            <input type="number" name="numero" id="numero" required>
+                            <label for="numero"></label>
+                        </div>
+
+                        <div class="inputBx">
+                            <span>Celular (*)</span>
+                            <input type="text" name="celular" id="cel" required>
+                            <label for="cel"></label>
+                        </div>
+
+                        <div class="inputBx">
+                            <span>Telefone </span>
+                            <input type="number" name="fixo" id="fixo">
+                            <label for="fixo"></label>
+                        </div>
+
+                        <div class="inputBx">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+       <script type="text/javascript" src="js/cep.js"></script> 
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
 
 </html>
