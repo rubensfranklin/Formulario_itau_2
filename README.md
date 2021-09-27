@@ -1,8 +1,8 @@
-# Formulario_itau_2
+#  Processo Seletivo - Formação Tech 4
 
 <h1 align="center" >
-<img src = "https://github.com/rubensfranklin/Formulario_itau_2/blob/main/imagens/logo%20itau.png">
-<p> Processo Seletivo - Formação Tech 4</p>
+<img src = "https://github.com/rubensfranklin/Formulario_itau_2/blob/main/imagens/logo%20itau.png" weight:"400px" height:"400px" >
+
 
 ## Desafio Cadastro Pessoal 
 
