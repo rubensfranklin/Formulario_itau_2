@@ -1,7 +1,7 @@
 # Formulario_itau_2
 
 <h1 align="center" >
-<img src = "https://github.com/rubensfranklin/tema-escuro-3/blob/main/assets/img/Tai___Ita___Financeira-logo-64B5F96538-seeklogo.com.png">
+<img src = "https://github.com/rubensfranklin/Formulario_itau_2/blob/main/imagens/logo%20itau.png>
 <p> Processo Seletivo - Formação Tech</p>
 
 ## Desafio Cadastro Pessoal 
