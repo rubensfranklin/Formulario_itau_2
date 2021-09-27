@@ -166,6 +166,7 @@ section .contentBx .formBx .inputBx input[type='submit']:hover{
     
 }
 /* Aqui responsividade Celular */
+
 @media (max-width: 500px){
 
     section .imgBx{
@@ -193,7 +194,7 @@ section .contentBx .formBx .inputBx input[type='submit']:hover{
         height: 100%;
         margin-top: 7rem;
         margin-bottom: 7rem;
-               padding: 15px;
+        padding: 12px;
         background: rgb(255,255, 255  );
         opacity: 0.9;
     
